@@ -1,0 +1,63 @@
+.iconbutton {
+    transition: all 0.3s ease-in-out !important;
+}
+.iconbutton:hover {
+    transform: scale(1.1);
+    color: rgb(142, 46, 91) !important;
+    box-shadow: 0 7px 7px rgba(0, 0, 57, 0.4) !important;
+}
+
+.card {
+  background-color:rgb(202, 131, 166) !important;
+  border-radius: 20px !important;
+  box-shadow: 0 4px 8px rgba(255, 105, 180, 0.2) !important;
+  transition: all 0.3s ease-in-out !important;
+}
+.card:hover {
+  transform: scale(1.02);
+  padding-top: 25px !important;
+  padding-bottom: 25px !important;
+}
+
+
+  @font-face{
+    font-family: 'playfair';
+    src:url("/public/fonts/static/PlayfairDisplay-Black.ttf");
+    font-weight: 900;
+  }
+
+  @font-face{
+    font-family: 'playfair';
+    src:url("/public/fonts/static/PlayfairDisplay-Italic.ttf");
+    font-weight: 100;
+  }
+  @font-face{
+    font-family: 'playfair';
+    src:url("/public/fonts/static/PlayfairDisplay-Bold.ttf");
+    font-weight: bold;
+  }
+  @font-face{
+    font-family: 'playfair';
+    src:url("/public/fonts/static/PlayfairDisplay-SemiBold.ttf");
+    font-weight: normal;
+  }
+ 
+/* Background with repeating bows */
+/* Background with repeating bows (no animation) */
+body::before {
+  content: '';
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: url('https://gallery.yopriceville.com/var/resizes/Free-Clipart-Pictures/Ribbons-and-Banners-PNG/Pink_Bow_Transparent_PNG_Clipart.png') repeat;
+  background-size: 100px 120px; /* Smaller size for a more subtle effect */
+  z-index: -1;
+  opacity: 0.1; /* Lighter opacity */
+}
+
+body {
+  background-color: #ffe6f0; /* pink background */
+  font-family: 'playfair', cursive;
+}
